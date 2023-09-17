@@ -25,3 +25,13 @@
 | BLS12-381 |  255  | 128 |
 
 [1] A Taxonomy of Pairing-Friendly Elliptic Curves
+
+## Library for pairing
+
+- pairing with rust (https://docs.rs/pairing/0.14.2/pairing/). In Tyurek's Github (https://github.com/tyurek), there are two python wrapper for the pairing library. Unfortunately, the pairing library does not optimize the multi-exponentiations and multi-pairing.
+- An introduction for bls12-381 (https://hackmd.io/@benjaminion/bls12-381)
+- bls12-381 with rust
+ - ark_bls12_381 (https://docs.rs/ark-bls12-381/0.4.0/ark_bls12_381/): a python wrapper for this library (https://docs.rs/ark-bls12-381/0.4.0/ark_bls12_381/), which does not support the newest version.
+ - blstrs by filecoin (https://github.com/filecoin-project/blstrs)
+- the py_ecc (https://github.com/ethereum/py_ecc/tree/master) by ethereum supports secp256k1, alt_bn128, and bls12_381 withou any optimization.
+- a python implementation (https://github.com/wborgeaud/python-pippenger) with ecdsa library for fast multi-exponentiations, but does not support bls12-381 curve.
