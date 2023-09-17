@@ -10,7 +10,7 @@
 
 这些措施可以确保在椭圆曲线加密和配对友好曲线中达到n位安全性。
 
-**期望的安全级别、曲线参数的位大小和相应的嵌入度**
+**期望的安全级别、曲线参数的位大小和相应的嵌入度**[1]
 |Security level | Subgroup size r |Extension fields size $q^k$ |Embedding degree (\rou =1 \2)|
 | :----- | :--: | -------: | -------: |
 | 80 | 160 |960-1280 |6-8 |2^*, 3-4|
@@ -23,3 +23,5 @@
 | Curve   | order (bits) |     security level |
 | :----- | :--: | -------: |
 | BLS12-381 |  255  | 128 |
+
+[1] A Taxonomy of Pairing-Friendly Elliptic Curves
